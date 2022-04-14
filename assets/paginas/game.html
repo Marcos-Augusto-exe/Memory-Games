@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="icon" href="../images/cerebro-humano.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Jogo da memória</title>
+</head>
+
+<body>
+    <div id="gameBoard" data-aos="fade-left">
+
+        <!-- <div id="0" class="card" data-icon="bootstrap">
+            <div class="card_front">
+    
+                <img class="icon" src="/assets/images/bootstrap.png">
+    
+            </div>
+    
+            <div class="card_back">
+                &lt/&gt
+            </div>
+    
+        </div>-->
+
+    </div>
+
+    <div id="fundo">
+        <div id="gameOver">
+            <p>Parabéns <span id="nome_do_jogador"></span>,</p>
+            <p> você completou o jogo!</p>
+            <button id="restart" onclick="restart()">Jogar novamente</button>
+        </div>
+    </div>
+
+    <script src="../scripts/game.js"></script>
+    <script src="../scripts/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        }
+        );
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00070e;
+    color: white;
+}
+
+#container {
+    color: white;
+    font-size: 80px;
+    max-width: 1100px;
+    text-align: center;
+}
+
+#saudacao {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+#nome_btn {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    font-size: 33px;
+}
+
+.p2 {
+    margin-top: 10px;
+    font-size: 12px;
+    color: hsla(0, 0%, 20%, 0.9);
+}
+
+#nome {
+    width: 350px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #002041;
+    font-size: 20px;
+    color: yellow;
+    text-transform: capitalize;
+    outline: none;
+}
+
+#nome:hover {
+    border: 2px solid yellow;
+    padding: 13px;
+}
+
+#proximo {
+    padding: 10px;
+    font-size: 20px;
+    height: 50px;
+    font-weight: bold;
+    background-color: rgb(182, 182, 0);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#proximo:hover {
+    background-color: yellow;
+    border: 2px solid yellow;
+    ;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 520px) {
+    #saudacao {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    #saudacao {
+        font-size: 45px;
+    }
+
+    .p1 {
+        font-size: 20px;
+    }
+
+    #nome_btn {
+        text-align: center;
+    }
+
+    #nome {
+        width: 310px;
+    }
+
+}

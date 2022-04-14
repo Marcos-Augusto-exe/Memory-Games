@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/temas.css">
+    <link rel="icon" href="../images/cerebro-humano.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Jogo da memória</title>
+</head>
+
+<body>
+
+    <div class="saudacao" data-aos="fade-down">
+        Olá <span id="nome_do_jogador"></span>! Escolha o <div>tema que preferir.</div>
+        
+      </div>
+    <div class="container">
+        
+        <div class="card" data-aos="fade-right">
+
+            <div class="face face1">
+                <div class="content">
+                    <img src="../images/goku.webp" alt="goku">
+                    <h2>ANIMES</h2>
+                </div>
+                <a href="../paginas/game.html"><Button id="animes" class="btn">Começar</Button></a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-aos="fade-right">
+
+            <div class="face face1">
+                <div class="content">
+                    <img src="../images/homen-aranha.png" alt="homen-aranha">
+                    <h2>MARVEL</h2>
+                </div>
+                <a href="../paginas/game.html"><Button id="marvel" class="btn">Começar</Button></a>
+            </div>
+
+        </div>
+
+        <div class="card" data-aos="fade-left">
+
+            <div class="face face1">
+                <div class="content">
+                    <img src="../images/batman.png" alt="batman">
+                    <h2>DC</h2>
+                </div>
+                <a href="../paginas/game.html"><Button id="dc" class="btn">Começar</Button></a>
+            </div>
+
+        </div>
+
+        <div class="card" data-aos="fade-left">
+
+            <div class="face face1">
+                <div class="content">
+                    <img src="../images/real_madrid.png" alt="real madrid">
+                    <h2>TIMES</h2>
+                </div>
+                <a href="./game.html"><Button id="times" class="btn">Começar</Button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../scripts/nome.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        }
+        );
+    </script>
+
+    <script src="../scripts/temas.js"></script>
+
+    <script>
+        
+    </script>
+
+
+</body>
+
+</html>

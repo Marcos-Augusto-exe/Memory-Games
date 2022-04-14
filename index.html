@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/telaInicial.css">
+    <link rel="icon" href="./assets/images/cerebro-humano.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Jogo da memória</title>
+</head>
+
+<body>
+   <div id="saudacao" data-aos="fade-left">
+          Bem vindo ao <div>Memory Games!</div>
+          
+        </div>
+    <div id="container">
+
+        
+        <div id="nome_btn" data-aos="fade-right">
+            <p class="p1">Como você se chama?</p>
+            <input id="nome" type="text" placeholder="Nome" >
+            <p class="p2">(Caso não preencha o campo, você será chamado de Player)</p>
+
+            <a href="./assets/paginas/temas.html"><button id="proximo">Próximo</button></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/scripts/nome.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        }
+        );
+    </script>
+
+</body>
+
+</html>

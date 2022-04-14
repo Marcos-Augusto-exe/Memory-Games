@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00070e;
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card_back,.card_front{
+    width:100% ;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.4) ;
+    backface-visibility: hidden;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.card_front{
+    transform:rotateY(180deg);
+    background-color: yellow;
+}
+
+.card_back{
+    background-color:rgb(182, 182, 0);
+    font-size: 30px;
+    color: #101c2c;
+}
+
+.card_back:hover{
+    background-color: yellow;
+}
+.icon{
+    padding: 4px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.icon2{
+    width: 100px;
+}
+
+#fundo{
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.9);
+}
+
+#gameOver{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+#nome_do_jogador{
+    color: yellow;
+}
+
+
+#restart{
+    padding: 8px;
+    font-size: 20px;
+    height: 50px;
+    font-weight: bold;
+    background-color:rgb(182, 182, 0);
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+#restart:hover{
+   background-color: yellow;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+#gameBoard{
+    
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+
+@media (max-width: 860px) {
+    .card {
+      width: 130px;
+      height: 130px;
+    }
+    .icon {
+      height: 140px;
+    }
+    .icon2 {
+        width: 100px;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    #gameBoard {
+      grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+      gap: 15px;
+    }
+    .card {
+        width: 140px;
+        height: 120px;
+    }
+    .icon {
+        height: 120px;
+      }
+      .icon2 {
+          width: 90px;
+      }
+    
+  }
+  
+  @media (max-width: 630px) {
+    #gameBoard {
+      gap: 10px;
+    }
+    .card {
+      width: 120px;
+      height: 120px;
+    }
+    .icon {
+        height: 120px;
+      }
+      .icon2 {
+          width: 80px;
+      }
+  
+  }
+
+
+  @media (max-width: 550px) {
+    #gameBoard {
+        gap: 10px;
+      }
+      .card {
+        width: 110px;
+        height: 120px;
+      }
+      
+  
+  }
+  @media (max-width: 485px) {
+    #gameBoard {
+        gap: 10px;
+      }
+      .card {
+        width: 100px;
+        height: 120px;
+      }
+      
+  
+  }
+  @media (max-width: 460px) {
+    #gameBoard {
+        gap: 10px;
+      }
+      .card {
+        width: 80px;
+        height: 100px;
+      }
+      .icon {
+        width: 90px;
+        height: 100px;
+      }
+      .icon2 {
+        width: 60px;
+    }
+  
+  }
+  @media (max-height: 414px) {
+
+
+    #gameBoard {
+        grid-template: 1fr 1fr 1fr 1fr  / 1fr 1fr 1fr 1fr 1fr;
+
+        gap: 10px;
+      }
+      .card {
+        width: 100px;
+        height: 80px;
+      }
+      .icon {
+        width: 90px;
+        height: 90px;
+      }
+      .icon2 {
+        width: 60px;
+    }
+  
+  }
+  
